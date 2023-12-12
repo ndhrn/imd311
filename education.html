@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+<br>
+<br>
+<style> 
+        #clock { 
+            font-size: 30px;           
+            text-align: center; 
+	    width: 200px;                      
+            border-radius: 20px; 
+        } 
+    </style> 
+</head> 
+    <div id="clock">8:10:45</div> 
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime() { 
+            let time = new Date(); 
+            let hour = time.getHours(); 
+            let min = time.getMinutes(); 
+            let sec = time.getSeconds(); 
+            am_pm = "AM"; 
+  
+            if (hour > 12) { 
+                hour -= 12; 
+                am_pm = "PM"; 
+            } 
+            if (hour == 0) { 
+                hr = 12; 
+                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script> 
+<br>
+<br>
+<style>
+.topnav {
+overflow: hidden;
+}
+.topnav a {
+float: center;
+color: white;
+text-align: center;
+padding: 30px 30px;
+text-decoration: none;
+font-size: 20px;
+}
+.topnav a:hover {
+  color: purple;
+}
+body {
+    background-image: url('images/bg5.jpg');
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #060c20; 
+    background-size: 1760px 852px;
+    background-attachment: fixed;
+}
+table, th, td {
+   border: 1px solid;
+   text-align: center;
+   width: 800px;
+   height: 70px;
+}
+div.a {
+font-size: 300%;
+}
+</style>
+</head>
+
+<header>
+    <!-- Right-sided navbar links -->
+<div class="topnav">
+      <a href="index.html">HOME</a>
+      <a href="aboutme.html">ABOUT ME</a>
+      <a href="family.html"></i>FAMILY</a>
+      <a href="education.html"></i>EDUCATION</a>
+      <a href="hobby.html"></i>MY HOBBY</a>
+      <a href="gallery.html"></i>GALLERY</a>
+    </div>
+</header>
+
+<body>
+<center>
+<div class="a">
+<h3 style="color:white">Where I'm Study</h3>
+</div>
+<table style="color:white" border="1">
+<tr bgcolor="grey">
+<td>Year</td>
+<td>Level</td>
+<td>Name</td>
+<td>Picture</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>Early Education 1</td>
+<td>'Tadika Harapan Bestari'</td>
+<td>no picture</td>
+</tr>
+<tr>
+<td>2010-2015</td>
+<td>Primary School</td>
+<td>Sekolah Kebangsaan Pinang Tunggal</td>
+<td><img src="images/skpt.jpg" width="90%" height="250%"></td>
+</tr>
+<tr>
+<td>2016-2021</td>
+<td>Secondary School</td>
+<td>Sekolah Menengah Kebangsaan Pinang Tunggal</td>
+<td><img src="images/smkpt.jpg" width="90%" height="250%"></td>
+</tr>
+<tr>
+<td>2021-2024</td>
+<td>Higher Education</td>
+<td>Universiti Teknologi Mara Cawangan Kedah</td>
+<td><img src="images/uitm.jpg" width="90%" height="250%"></td>
+</tr>
+</table>
+</ul>    
+</body>
+</tr>
+</footer>
+</html>

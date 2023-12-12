@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+<br>
+<br>
+<style> 
+        #clock { 
+            font-size: 30px;           
+            text-align: center; 
+	    width: 200px;                      
+            border-radius: 20px; 
+        } 
+    </style> 
+</head> 
+    <div id="clock">8:10:45</div> 
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime() { 
+            let time = new Date(); 
+            let hour = time.getHours(); 
+            let min = time.getMinutes(); 
+            let sec = time.getSeconds(); 
+            am_pm = "AM"; 
+  
+            if (hour > 12) { 
+                hour -= 12; 
+                am_pm = "PM"; 
+            } 
+            if (hour == 0) { 
+                hr = 12; 
+                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script> 
+<br>
+<br>
+<style>
+.topnav {
+overflow: hidden;
+}
+.topnav a {
+float: center;
+color: white;
+text-align: center;
+padding: 30px 30px;
+text-decoration: none;
+font-size: 20px;
+}
+.topnav a:hover {
+  color: purple;
+}
+body {
+    background-image: url('images/bg3.jpg');
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #060c20; 
+    background-size: 1760px 852px;
+    background-attachment: fixed;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
+<header>
+    <!-- Right-sided navbar links -->
+<div class="topnav">
+      <a href="index.html">HOME</a>
+      <a href="aboutme.html">ABOUT ME</a>
+      <a href="family.html"></i>FAMILY</a>
+      <a href="education.html"></i>EDUCATION</a>
+      <a href="hobbies.html"></i>HOBBIES</a>
+      <a href="gallery.html"></i>GALLERY</a>
+    </div>
+</header>
+<body>
+<center>
+<h3 style="color:white">All About My Family</h3>
+<div class="row">
+  <div class="column">
+    <img src="images/ayah.jpg" alt="my father" style="width:50%">
+<p style="color:white">
+Name: Harun bin Awaludin<br>
+Relation: Father<br>
+Age: 55 years old<br>
+</p>
+  </div>
+  <div class="column">
+    <img src="images/ibu.jpg" alt="my mother" style="width:50%">
+<p style="color:white">
+Name: Nor Hashimah bt Othman<br>
+Relation: Mother<br>
+Age: 58 years old<br>
+</p>
+  </div>
+  <div class="column">
+    <img src="images/kakak1.jpg" alt="my older sister" style="width:50%">
+<p style="color:white">
+Name: Nur Nabihah binti Harun<br>
+Relation: Older sister<br>
+Age: 29 years old<br>
+</p>
+  </div>
+<div class="column">
+    <img src="images/abg.jpg" alt="my brother" style="width:50%">
+<p style="color:white">
+Name: Muhammad Zaid Nabih bin Harun<br>
+Relation: Brother<br>
+Age: 28 years old<br>
+</p>
+  </div>
+<div class="column">
+    <img src="images/kakcik.jpg" alt="my second sister" style="width:50%">
+<p style="color:white">
+Name: Nur Nasuha binti Harun<br>
+Relation: Second sister<br>
+Age: 25 years old<br>
+</p>
+  </div>
+<div class="column">
+    <img src="images/me2.jpg" alt="me" style="width:50%">
+<p style="color:white">
+Name: Nur Nadiah binti Harun<br>
+Relation: Myself<br>
+Age: 20 years old<br>
+</p>
+  </div>
+</div>
+
+
+</style>
+</head>
+<body>
+</body>
+</html>

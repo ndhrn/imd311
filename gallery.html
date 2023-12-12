@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+<br>
+<br>
+<style> 
+        #clock { 
+            font-size: 30px;           
+            text-align: center; 
+	    width: 200px;                      
+            border-radius: 20px; 
+        } 
+    </style> 
+</head> 
+    <div id="clock">8:10:45</div> 
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime() { 
+            let time = new Date(); 
+            let hour = time.getHours(); 
+            let min = time.getMinutes(); 
+            let sec = time.getSeconds(); 
+            am_pm = "AM"; 
+  
+            if (hour > 12) { 
+                hour -= 12; 
+                am_pm = "PM"; 
+            } 
+            if (hour == 0) { 
+                hr = 12; 
+                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script> 
+<br>
+<br>
+<style>
+.topnav {
+overflow: hidden;
+}
+.topnav a {
+float: center;
+color: white;
+text-align: center;
+padding: 30px 30px;
+text-decoration: none;
+font-size: 20px;
+}
+.topnav a:hover {
+  color: purple;
+}
+body {
+    background-image: url('images/bg6.jpg');
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #060c20; 
+    background-size: 1760px 852px;
+    background-attachment: fixed;
+}
+table, th, td {
+   border: 1px solid;
+   text-align: center;
+   width: 800px;
+   height: 70px;
+}
+div.a {
+font-size: 300%;
+}
+</style>
+</head>
+
+<header>
+    <!-- Right-sided navbar links -->
+<div class="topnav">
+      <a href="index.html">HOME</a>
+      <a href="aboutme.html">ABOUT ME</a>
+      <a href="family.html"></i>FAMILY</a>
+      <a href="education.html"></i>EDUCATION</a>
+      <a href="hobby.html"></i>MY HOBBY</a>
+      <a href="gallery.html"></i>GALLERY</a>
+    </div>
+</header>
+<br>
+    <body>
+<center>
+<h3 style="color:white">Me, My Family & Friends</h3>
+<video width="20%" height="10%" controls>
+  <source src="vid.mp4" type="video/mp4">
+</video>
+	<div class="row">
+  <div class="column">
+    <img src="images/g1.jpg" width="15%">
+  </div>
+  <div class="column">
+    <img src="images/g2.jpg" width="15%">
+  </div>
+  <div class="column">
+    <img src="images/g3.jpg" width="15%">
+  </div>
+<embed src="sde.mp3" autostart></embed>
+    </body>
+
+<br>
+<footer>
+<td><a href="https://www.instagram.com/2abokado"><img src="icons/ig.jpg" width="30" height="30"></a></td>
+<td><a href="https://www.snapchat.com/yuraeo"><img src="icons/sc.jpg" width="30" height="30"></a></td>
+<td><a href="https://twitter.com/mochalamak"><img src="icons/twt.png" width="30" height="30"></a></td>
+</tr>
+</footer>
+</html>
